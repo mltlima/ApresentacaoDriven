@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>Event Listener</header>
+
+    <button class="mouseButton">Mouse</button>
+    <button class="tecladoButton">Teclado</button>
+    <button class="callbackButton">Callback</button>
+    <button class="callbackButtonConsertada">Callback Consertado</button>
+    <button class="EventListenerButton">Event Listener</button>
+    <button onclick="resetOutput()">Reset</button>
+
+    <div class="mouse-exemplo esconder">
+        <div onmousemove="myMoveFunction()">
+            <p>onmousemove:
+              <br> <span id="demo">Mouse over me!</span></p>
+          </div>
+          
+          <div onmouseenter="myEnterFunction()">
+            <p>onmouseenter:
+              <br> <span id="demo2">Mouse over me!</span></p>
+          </div>
+          
+          <div onmouseover="myOverFunction()">
+            <p>onmouseover:
+              <br> <span id="demo3">Mouse over me!</span></p>
+          </div>
+    </div>
+
+    <div class="teclado-exemplo esconder">
+
+    </div>
+
+    <div class="callback-exemplo esconder">
+
+    </div>
+
+    <div class="EventListener-exemplo esconder">
+        <div class="grandparent global">
+            <div class="parent global">
+                <div class="child global"></div>
+            </div>
+        </div>
+        <h1 class="eventListenerOutput"></h1>
+    </div>
+    
+    <script src="script.js"></script>
+</body> 
+</html>
